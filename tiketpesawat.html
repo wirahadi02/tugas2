@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tiket Pesawat</title>
+</head>
+<body>
+<h1 style="text-align: center;">✈️ Form Pemesanan Tiket Pesawat Pesawat ✈️</h1>
+<div style="text-align: center;">
+    <p> 
+        <a href="https://www.facebook.com/share/1K1BM96NX3/"><img src="" alt="facebook" width= "20px">facebook</a>|
+        <a href="https://youtube.com/@wiraahadi-rk3dy?si=pnlnUS9-s0aPXxEa"> <img src="poto/download.png" alt="youtube" width="20px">youtube</a>|
+        <a href="https://www.instagram.com/wirhdy?igsh=azFqMmMxb2d6cjh0"> <img src="poto/download.jpg" alt="instagram " width="20px">instagram</a>|
+        <a href="https://www.tiktok.com/@wkwkwk32347?_t=ZS-906cV8wG9X6&_r=1"> <img src="poto/download (1).png" alt="tiktok" width="20px">tiktok</a>
+    </p>
+    <h3>untuk lebih lanjut hubungi media sosial yang tertera di atas</h3>
+</div>
+    <form action="" method="POST"> 
+        <fieldset>
+            <legend>Informasi Penumpang</legend>
+            <p>
+                <label for="nama-lengkap">Nama Lengkap :</label><br>
+                <input type="text" id="nama-lengkap" placeholder="Masukkan Nama Lengkap" size="50" required>
+            </p>
+            <p>
+                <label for="identitas">Nomor Identitas (KTP/Paspor):</label><br>
+                <input type="text" id="identitas" placeholder="Masukkan Nomor Identitas" size="50" required>
+            </p>
+            <p>
+                <label for="kelamin">Jenis Kelamin :</label><br>
+                <select id="kelamin" required>
+                    <option value="" disabled selected>Pilih Jenis Kelamin</option>
+                    <option value="L">Laki-laki</option>
+                    <option value="P">Perempuan</option>
+                </select>
+            </p>
+            <p>
+                <label for="email">Alamat  :</label><br>
+                <input type="email" id="email" placeholder="Masukkan Email" size="50" required>
+            </p>
+            <p>
+                <label for="telepon">Nomor Telepon :</label><br>
+                <input type="tel" id="telepon" placeholder="Masukkan Nomor Telepon" size="50" required>
+            </p>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Informasi Penerbangan</legend>
+
+            <p>
+                <label for="bandara-berangkat">Bandara Keberangkatan :</label><br>
+                <select id="bandara-berangkat" required>
+                    <option value="" disabled selected>Pilih Bandara Keberangkatan</option>
+                    <option value="CGK">Soekarno-Hatta (CGK) - Jakarta</option>
+                    <option value="DPS">I Gusti Ngurah Rai (DPS) - Denpasar</option>
+                    <option value="SUB">Juanda (SUB) - Surabaya</option>
+                    <option value="KNO">Kualanamu (KNO) - Medan</option>
+                    <option value="LOP">Zainuddin Abdul Madjid (LOP) - Lombok</option>
+                </select>
+            </p>
+            <p>
+                <label for="bandara-tujuan">Bandara Tujuan :</label><br>
+                <select id="bandara-tujuan" required>
+                    <option value="" disabled selected>Pilih Bandara Tujuan</option>
+                    <option value="CGK">Soekarno-Hatta (CGK) - Jakarta</option>
+                    <option value="DPS">I Gusti Ngurah Rai (DPS) - Denpasar</option>
+                    <option value="SUB">Juanda (SUB) - Surabaya</option>
+                    <option value="KNO">Kualanamu (KNO) - Medan</option>
+                    <option value="LOP">Zainuddin Abdul Madjid (LOP) - Lombok</option>
+                </select>
+            </p>
+            <p>
+                <label for="daftar-pesawat">Daftar pesawat :</label><br>
+                <select id="daftar-pesawat" required>
+                    <option value="" disabled selected> Pilih Daftar pesawat</option>
+                    <option value="Lo">Lion</option>
+                    <option value="A">Air</option>
+                    <option value="BA">Batik Air</option>
+                    <option value=""WR>Wings Air</option>
+                </select>
+            </p>
+            <p>
+                <label for="tgl-berangkat">Tanggal Keberangkatan :</label><br>
+                <input type="date" id="tgl-berangkat" required>
+            </p>
+            <p>
+                <label for="tgl-pulang">Tanggal Kepulangan (Opsional) :</label><br>
+                <input type="date" id="tgl-pulang">
+            </p>
+            <p>
+                <label for="penumpang">Jumlah Penumpang:</label><br>
+                <input type="number" id="penumpang" value="1" min="1" required>
+            </p>
+            <p>
+                <label for="kelas">Kelas Penerbangan:</label><br>
+                <select id="kelas" required>
+                    <option value="ekonomi">Ekonomi</option>
+                    <option value="bisnis">Bisnis</option>
+                    <option value="first">First Class</option>
+                </select>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Metode Pembayaran</legend>
+            <p>Pilih Metode Pembayaran :</p>
+            
+            <p>
+                <input type="radio" id="kredit" name="pembayaran" value="kredit" required>
+                <label for="kredit">Kartu Kredit/Debit</label><br>
+                
+                <input type="radio" id="transfer" name="pembayaran" value="transfer">
+                <label for="transfer">Transfer Bank</label><br>
+                
+                <input type="radio" id="e-wallet" name="pembayaran" value="e-wallet">
+                <label for="e-wallet">E-Wallet (Dana, GoPay, OVO, Pulsa, dll.)</label>
+            </p>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Pesan Tiket" style="padding: 10px 20px;">
+        </p>
+
+    </form>   
+</body>
+</html>
